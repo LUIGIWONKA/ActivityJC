@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@900&display=swap');
+
+* {
+    margin: 0.5%;
+    padding: 0;
+    background-color: #AEB6BF;
+}
+
+.container {
+    width: 80%;
+    height: 80%;
+}
+
+.ghost_container {
+    display: grid;
+    clear: both;
+    background-color: #85929e;
+    border-radius: 20px;
+    padding-top: 50px;
+    transition: all 1s ease-out;
+
+}
+
+.ghost {
+    width: 550px;
+    height: 550px;
+    background-color: transparent;
+    border-radius: 100%;
+    position: relative;
+    left: 55%;
+    cursor: pointer;
+    user-select: none;
+    transition: all 1s ease-out;
+}
+
+.ghost:hover {
+    border-radius: 100%;
+    transform: rotateZ(2deg);
+    transition: all 1s;
+}
+
+.logo {
+    position: relative;
+    float: left;
+    top: 80px;
+    left: 90px;
+    background-color: transparent;
+    font-family: 'Space Grotesk', sans-serif;
+    user-select: none;
+    transition: all 1s ease-out;
+}
+
+.text.nav {
+    position: relative;
+    float: right;
+    display: inline-flex;
+    width: 80px;
+    place-items: center;
+    top: 80px;
+    background-color: transparent;
+    font-family: 'Space Grotesk', sans-serif;
+    cursor: pointer;
+    transition: all 1s ease-out;
+}
+
+.text.nav:hover {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.text {
+    background-color: transparent;
+}
+
+.error {
+    background-color: transparent;
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    font-family: 'Space Grotesk', sans-serif;
+    display: flex;
+    flex-direction: column;
+    user-select: none;
+}
+
+.text.eror {
+    text-transform:capitalize;
+    line-height: 1.5;
+    font-size: 20px;
+    user-select: none;
+    transition: all 1s ease-out;
+}
+
+.text.message {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 100px;
+    width: 550px;
+    user-select: none;
+
+}
+
+.text.message2 {
+    font-size: 20px;
+    line-height: 0.9;
+    user-select: none;
+
+}
+
+.button {
+    padding: 7px 40px;
+    line-height: 1.8;
+    margin-top: 25px;
+    background-color: black;
+    border-color: transparent;
+    color: white;
+    border-radius: 50px;
+    text-transform: capitalize;
+    box-shadow: 0px 30px 17px 0px black;
+    cursor: pointer;    
+}
+
+.button:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 1px 1px 5px 1px white;
+    border: white;
+    transition: all 1s ease-out;
+}
+
+footer {
+    background-color: transparent;
+}
+
+.text.footer {
+    text-align: center;
+}
+
+.footer_text {
+    background-color: transparent;
+    font-family: 'Space Grotesk', sans-serif;
+    position: relative;
+    bottom: 15px;
+    cursor: pointer;
+}
+
+@media (max-width: 958px) {
+    .text.message {
+        font-size: 75px;
+        transition: all 1s ease-out;
+    }
+    .text.message2 {
+        font-size: 18px;
+        transition: all 1s ease-out;
+
+    }
+    .text.nav {
+       font-size: 16px;
+       margin-left: 0em;
+       transition: all 1s ease-out;
+
+    }
+    .logo {
+        font-size: 14px;
+        transition: all 1s ease-out;
+
+    }
+    .ghost {
+        position: relative;
+        left: 370px;
+    }
+}
+@media (max-width: 858px) {
+    .logo {
+        font-size: 12px;
+        transition: all 1s ease-out;
+    }
+    .text.nav {
+        font-size: 14px;
+        transition: all 1s ease-out;
+        position: relative;
+        top: 120px;
+        right: 65px;
+    }
+    .text.eror {
+        font-size: 15px;
+    }
+    .text.message {
+        font-size: 45px;
+        transition: all 1s ease-out;
+    }
+    .text.message2 {
+        font-size: 15px;
+        transition: all 1s ease-out;
+    }
+    .ghost {
+        position: relative;
+        left: 120px;
+        transition: all 1s ease-out;
+    }
+
+}
